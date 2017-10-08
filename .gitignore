@@ -24,7 +24,7 @@
 hs_err_pid*
 
 # IntelliJ IDEA files and folders
-Bootty.iml
+*.iml
 .idea/
 
 # target folder
