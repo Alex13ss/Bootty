@@ -2,8 +2,8 @@ package ua.com.bootty.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ua.com.bootty.entity.Course;
-import ua.com.bootty.repository.CourseRepository;
+import ua.com.bootty.domain.model.Course;
+import ua.com.bootty.domain.repository.CourseRepository;
 
 import java.util.ArrayList;
 import java.util.List;

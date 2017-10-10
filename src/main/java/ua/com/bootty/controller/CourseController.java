@@ -2,8 +2,8 @@ package ua.com.bootty.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ua.com.bootty.entity.Course;
-import ua.com.bootty.entity.Topic;
+import ua.com.bootty.domain.model.Course;
+import ua.com.bootty.domain.model.Topic;
 import ua.com.bootty.service.CourseService;
 
 import java.util.List;

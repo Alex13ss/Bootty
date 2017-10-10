@@ -1,7 +1,7 @@
-package ua.com.bootty.repository;
+package ua.com.bootty.domain.repository;
 
 import org.springframework.data.repository.CrudRepository;
-import ua.com.bootty.entity.Course;
+import ua.com.bootty.domain.model.Course;
 
 import java.util.List;
 

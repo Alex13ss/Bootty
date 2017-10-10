@@ -2,7 +2,7 @@ package ua.com.bootty.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ua.com.bootty.entity.Topic;
+import ua.com.bootty.domain.model.Topic;
 import ua.com.bootty.service.TopicService;
 
 import java.util.List;
@@ -30,7 +30,7 @@ public class TopicController {
 
     @RequestMapping(method = RequestMethod.PUT, value = "/topics/{id}")
     public void updateTopic(@PathVariable String id, @RequestBody Topic topic) {
-        topicService.updateTopic(id, topic);
+        topicService.updateTopic(topic);
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/topics/{id}")

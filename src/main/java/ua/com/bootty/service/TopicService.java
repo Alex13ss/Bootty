@@ -2,8 +2,8 @@ package ua.com.bootty.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ua.com.bootty.entity.Topic;
-import ua.com.bootty.repository.TopicRepository;
+import ua.com.bootty.domain.model.Topic;
+import ua.com.bootty.domain.repository.TopicRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +28,7 @@ public class TopicService {
         topicRepository.save(topic);
     }
 
-    public void updateTopic(String id, Topic topic) {
+    public void updateTopic(Topic topic) {
         topicRepository.save(topic);
     }
 
