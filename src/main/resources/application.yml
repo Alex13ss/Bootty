@@ -3,6 +3,6 @@ logging:
     root: WARN
     org:
       springframework:
-        security: DEBUG
+        security: INFO
         web: ERROR
       hibernate: DEBUG
