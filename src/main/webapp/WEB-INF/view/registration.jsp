@@ -16,8 +16,8 @@
 
     <title>Create an account</title>
 
-    <link href="${contextPath}/resources/static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="${contextPath}/resources/static/css/common.css" rel="stylesheet">
+    <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,13 +30,13 @@
 
 <div class="container">
 
-    <form:form method="POST" modelAttribute="userForm" class="form-signin">
+    <form:form method="POST" modelAttribute="loginForm" class="form-signin">
         <h2 class="form-signin-heading">Create your account</h2>
-        <spring:bind path="username">
+        <spring:bind path="login">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="text" path="username" class="form-control" placeholder="Username"
+                <form:input type="text" path="login" class="form-control" placeholder="Your Login"
                             autofocus="true"></form:input>
-                <form:errors path="username"></form:errors>
+                <form:errors path="login"></form:errors>
             </div>
         </spring:bind>
 
@@ -61,6 +61,6 @@
 </div>
 <!-- /container -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="${contextPath}/resources/static/js/bootstrap.min.js"></script>
+<script src="${contextPath}/resources/js/bootstrap.min.js"></script>
 </body>
 </html>
