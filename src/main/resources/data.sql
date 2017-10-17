@@ -5,9 +5,3 @@ INSERT INTO TOPIC (id, name, description) VALUES
 
 INSERT INTO COURSE (id, name, description, topic_id) VALUES
   ('javac', 'Java Course', 'Java Course Description', 'java');
-
-INSERT INTO USER (login, password, first_name, last_name, email) VALUES
-  ('Alex', 'password', 'Alex', 'Western', 'sample@gmail.com');
-
-INSERT INTO ROLE (name) VALUES
-  ('user');
