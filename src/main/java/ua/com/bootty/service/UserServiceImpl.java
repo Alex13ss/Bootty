@@ -41,7 +41,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String login) throws UsernameNotFoundException {
-        User user = userRepository.getUserByLogin(login);
+        User user = userRepository.getByLogin(login);
 
         Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
         for (Role role : user.getRoles()) {
@@ -53,7 +53,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     public User findByUsername(String login) {
-        return userRepository.getUserByLogin(login);
+        return userRepository.getByLogin(login);
     }
 
     public List<User> getAllUsers() {

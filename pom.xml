@@ -7,7 +7,7 @@
     <groupId>bootty.com.ua</groupId>
     <artifactId>bootty-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>spring-boot-overview</name>
     <description>Spring Boot Overview</description>
 

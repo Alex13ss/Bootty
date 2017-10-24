@@ -4,3 +4,6 @@
 
 # target folder
 target/
+
+# Logs
+logs/
